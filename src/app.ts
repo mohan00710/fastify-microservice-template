@@ -1,7 +1,7 @@
 import fastify, { FastifyInstance } from 'fastify';
-import { config } from '@/config/config';
-import { registerPlugins } from '@/config/plugins';
-import { registerRoutes } from '@/routes';
+import { config } from './config/config';
+import { registerPlugins } from './config/plugins';
+import { registerRoutes } from './routes';
 
 export async function buildApp(): Promise<FastifyInstance> {
   const app = fastify({

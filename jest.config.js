@@ -25,4 +25,22 @@ module.exports = {
   moduleNameMapping: {
     '^@/(.*)$': '<rootDir>/src/$1',
   },
+  globals: {
+    'ts-jest': {
+      tsconfig: {
+        baseUrl: './src',
+        paths: {
+          '@/*': ['*'],
+          '@/controllers/*': ['controllers/*'],
+          '@/services/*': ['services/*'],
+          '@/models/*': ['models/*'],
+          '@/routes/*': ['routes/*'],
+          '@/middleware/*': ['middleware/*'],
+          '@/utils/*': ['utils/*'],
+          '@/types/*': ['types/*'],
+          '@/config/*': ['config/*']
+        }
+      }
+    }
+  }
 };

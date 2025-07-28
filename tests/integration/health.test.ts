@@ -1,4 +1,4 @@
-import { buildApp } from '@/app';
+import { buildApp } from '../../src/app';
 import { FastifyInstance } from 'fastify';
 
 describe('Health Routes', () => {
